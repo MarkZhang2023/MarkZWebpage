@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Mark's Personal Webpage</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body>
+        <!-- Responsive navbar-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">Mark Zhang</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link" aria-current="page" href="index.html">Home</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-user fa-fw"></i>ENGR Doc</a>
+                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="ENGR Doc.html">p1-3D printer Assembly&Benchy</a></li>
+                                <li><a class="dropdown-item" href="p2-Card holder.html">p2-Card holder</a></li>
+                                <li><a class="dropdown-item" href="p3-AlarmClock.html">p3-Alarm Clock</a></li>
+                            </ul>
+                        <li class="nav-item"><a class="nav-link" href="Reading Blog.html">Reading Blog</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#!">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Header - set the background image for the header in the line below-->
+        <header class="py-5 bg-image-full" style="background-image: url('./css/Engineering.jpg')" >
+            <div class="text-center my-5">
+                <h1 class="text-black fs-3 fw-bolder" style="font-weight: 250; font-size: 250%;">Mark Zhang</h1>
+                <p class="text-black mb-0" style="font-weight: 700; font-size: 300%">Engineering Documentation</p>
+            </div>
+        </header>
+        <!-- Content section-->
+        <section class="py-5">
+            <div class="container my-5">
+                <div class="row justify-content-center">
+                    <div class="col-lg-6">
+                        <h2 style="font-size: 250%;">Alarm Clock</h2>
+                         <p class="lead" style="font-size: 100%;">October 13th, Frisday, 2023 </p>
+                        <p class="lead" style="font-size: 100%;">During this week, I has been trained with necessary skills to make an alarm clock. The design process involves soldering, Fusion 360 modeling, Prusa Slicer parameter adjustment, and printing calibration</p>
+                        <a class="btn btn-primary btn-xl rounded-pill mt-5" href="#soldering">Soldering</a>
+                        <a class="btn btn-primary btn-xl rounded-pill mt-5" href="#Measurements and design">Measurements and design</a>
+                        <a class="btn btn-primary btn-xl rounded-pill mt-5" href="#1st try">1st try</a>
+                        <a class="btn btn-primary btn-xl rounded-pill mt-5" href="#Elaboration">Elaboration</a>
+                        <a class="btn btn-primary btn-xl rounded-pill mt-5" href="#Prints and iterations">Prints and iterations</a>
+                        <a class="btn btn-primary btn-xl rounded-pill mt-5" href="#Prints and iterations cont.">Prints and iterations cont.</a>
+                        <a class="btn btn-primary btn-xl rounded-pill mt-5" href="#Final product">Final product</a>
+                    </div>
+                </div>
+            </div>
+        </section>       
+        <!-- Content section-->
+        <section class="py-5" id="Soldering">
+            <div class="container px-5">
+                <div class="row gx-5 align-items-center">
+                    <div class="col-lg-6">
+                        <div class="p-5"><img class="img-fluid rounded-circle" src="./css/Soldering 1.jpg" ></div>
+                        <div class="p-5"><img class="img-fluid rounded-circle" src="./css/SOldering.jpg" ></div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="p-5">
+                            <h2 class="display-4">Soldering</h2>
+                            <p> The first step is to solder the kit. I had some prior soldering experience, though it dates back to my primary school days when I used to be a member of the electronics club. Nevertheless, I was a bit apprehensive about it since it had been a while, and I still remembered getting burned by the soldering iron. However, it didn't take me too long to regain this skill. The outcome was great. One important technique for achieving beautiful soldering points is not to linger too long on a single spot; a small amount of solder at the tip is sufficient to create a brilliant, flat soldering point. I once got some bulky soldering points, but the 'redo' tool helpe me a lot. One tip of the 'redo' tool is that you have to put it really close to the soldering point otherwise it won't be effective. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="Measurements and design">
+            <div class="container px-5">
+                <div class="row gx-5 align-items-center">
+                    <div class="col-lg-6 order-lg-2"> 
+                        <div class="p-5"><img class="img-fluid rounded-circle" src="./css/clockdimensions.jpg" ></div>
+                        <div class="p-5"><img class="img-fluid rounded-circle" src="./css/clockdesign.jpg" ></div>
+                    </div>
+                    <div class="col-lg-6 order-lg-1">
+                        <div class="p-5">
+                            <h2 class="display-4">Measurements and design</h2>
+                            <p> My partner and I took all the potentially useful measurements of the kit, including the dimensions of buttons, displays, batteries, etc., to ensure they would fit within the cover we designed. Subsequently, we devised a straightforward design for the container box, complete with openings for the displays and buttons. Inside the box, we included a rod to stabilize the kit and connect the cover to the base. Taking these measurements, though quite laborious out of context, proved to be an important step in the process. Later my partner came up with the idea of an additional bee-hive shell to enwrap this simple design. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <ssection class="py-5" id="1sttry">
+            <div class="container px-5">
+                <div class="row gx-5 align-items-center">
+                    <div class="col-lg-6 order-lg-1">
+                        <div class="p-5"><img class="img-fluid rounded-circle" src="./css/Clock v2.png" ></div>
+                        <div class="p-5"><img class="img-fluid rounded-circle" src="./css/1sttry.png" ></div>
+                    </div>
+                    <div class="col-lg-6 order-lg-2">
+                        <div class="p-5">
+                            <h2 class="display-4"> 1st try </h2>
+                            <p> We had a first try to just test out the dimensions we measured. This one was made intentionally simple. Soon we had it printed out. Most dimensions fitted but we should have considered tolerance. Therefore, in the later designs we always kept that in mind: make slots and holes a little bit bigger than what we've measured. </p>
+                        </div> 
+                </div>
+            </div>
+        </section>
+        <section id="Elaboration">
+            <div class="container px-5">
+                <div class="row gx-5 align-items-center">
+                    <div class="col-lg-6 order-lg-2"> 
+                        <div class="p-5"> <img class="img-fluid rounded-circle" src="./css/360design.png"></div>
+                        <div class="p-5"><img class="img-fluid rounded-circle" src="./css/Clock v1.png" ></div>
+                    </div>
+                    <div class="col-lg-6 order-lg-1">
+                        <div class="p-5">
+                            <h2 class="display-4">Elaboration</h2>
+                            <p>After obtaining the adjusted dimensions, we began developing more intricate designs.  We constructed the body, ensuring that the body fit snugly within the cover. We created several versions of the design: I worked on a flat cover with a concave slot, connected by an extruded rod from the flat cover, while my partner crafted a cover with a shell extrusion. We discovered that this refinement process was more efficient when each of us worked on separate versions to determine which one was better.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="Prints and iterations">
+            <div class="container px-5">
+                <div class="row gx-5 align-items-center">
+                    <div class="col-lg-6 order-lg-1"> 
+                        <div class="p-5"><img class="img-fluid rounded-circle" src="./css/fprint1.jpg" ></div>
+                        <div class="p-5"><img class="img-fluid rounded-circle" src="./css/fprint2.jpg" ></div>
+                    </div>
+                    <div class="col-lg-6 order-lg-2">
+                        <div class="p-5">
+                            <h2 class="display-4">Prints and iterations</h2>
+                            <p>This process required patience and multiple iterations, which resulted in numerous failed prints. The first one suffered from poor bridging due to inappropriate slicer settings, particularly the absence of a raft layer and inadequate inner support. However, even though it was undoubtedly a failure, it served as a valuable parameter to assess the fit of our holes. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="Prints and iterations cont.">
+            <div class="container px-5">
+                <div class="row gx-5 align-items-center">
+                    <div class="col-lg-6 order-lg-2"> 
+                        <div class="p-5"><img class="img-fluid rounded-circle" src="./css/fprint4.jpg"></div>
+                        <div class="p-5"><img class="img-fluid rounded-circle" src="./css/fprint3.jpg"></div>
+                    </div>
+                    <div class="col-lg-6 order-lg-1">
+                        <div class="p-5">
+                            <h2 class="display-4">Prints and iterations cont.</h2>
+                            <p>However, we soon realized that we had forgotten to allocate space for the battery. This prompted us to go back and redesign it before printing again. A new issue surfaced when we found that the hole for the battery connector was too small to allow it to pass through.In addition, our bee-hive model encountered a peculiar problem. We were using a Prusa MINI, and it printed halfway before stopping. As a result, we had to wait for days to reprint it. The entire process demanded time and effort as we struggled and learned from these challenges.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="Final product">
+            <div class="container px-5">
+                <div class="row gx-5 align-items-center">
+                    <div class="col-lg-6 order-lg-1"> 
+                        <div class="p-5"><img class="img-fluid rounded-circle" src="./css/bee-hive.jpg" ></div>
+                        <div class="p-5"><img class="img-fluid rounded-circle" src="./css/productclock.jpg" ></div>
+                    </div>
+                    <div class="col-lg-6 order-lg-2">
+                        <div class="p-5">
+                            <h2 class="display-4">Final product</h2>
+                            <p> Gladly, we eventually emerged from the arduous iterations! We obtained a stylish bee-hive shell and a body that fits perfectly (albeit with some minor printing issues, most likely due to poor bridging and insufficient support). We also managed to create an individual, straightforward version with a well-fitting battery container. Well, except for a minor mishap that the rod extruded the wrong way, shhh let's just pretend you didn't notice that. :) I actually tested that rod, it actually fits in the hole I reserved on the body and could go through the hole on the kit board. So if I flip it and reprint it everything will be fine, hopefully.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Footer-->
+        <footer class="py-5 bg-dark">
+            <div class="container"><p class="m-0 text-center text-white">Copyright &copy; Mark Zhang 2023</p></div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
