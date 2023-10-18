@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Mark's Personal Webpage</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body>
+        <!-- Responsive navbar-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">Mark Zhang</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link" aria-current="page" href="index.html">Home</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-user fa-fw"></i>ENGR Doc</a>
+                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="ENGR Doc.html">p1-3D printer Assembly&Benchy</a></li>
+                                <li><a class="dropdown-item" href="p2-Card holder.html">p2-Card holder</a></li>
+                                <li><a class="dropdown-item" href="p3-AlarmClock.html">p3-Alarm Clock</a></li>
+                                <li><a class="dropdown-item" href="p4-eNABLE hand.html">p4-eNABLE Hand</a></li>
+                            </ul>
+                        <li class="nav-item"><a class="nav-link" href="./portfolio/portfolio.html">Calligraphy Portfolio</a></li>                        
+                        <li class="nav-item"><a class="nav-link" href="Reading Blog.html">Reading Blog</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Header - set the background image for the header in the line below-->
+        <header class="py-5 bg-image-full" style="background-image: url('./css/Engineering.jpg')" >
+            <div class="text-center my-5">
+                <h1 class="text-black fs-3 fw-bolder" style="font-weight: 250; font-size: 250%;">Mark Zhang</h1>
+                <p class="text-black mb-0" style="font-weight: 700; font-size: 300%">Engineering Documentation</p>
+            </div>
+        </header>
+        <!-- Content section-->
+        <section class="py-5">
+            <div class="container my-5">
+                <div class="row justify-content-center">
+                    <div class="col-lg-6">
+                        <h2 style="font-size: 250%;">Alarm Clock</h2>
+                        <p class="lead" style="font-size: 100%;">October 13th, Frisday, 2023 </p>
+                        <p class="lead" style="font-size: 100%;">Since last week, I has been trained with necessary skills to print and seemble an e-NABLE hand. The model I chose is Unlimited Phoenix version 3, left hand. </p>
+                        <a class="btn btn-primary btn-xl rounded-pill mt-5" href="#Slice & print">Slice & print</a>
+                        <a class="btn btn-primary btn-xl rounded-pill mt-5" href="#Assembly and reflcetion on the guidances">Assembly and reflcetion on the guidances</a>
+                        <a class="btn btn-primary btn-xl rounded-pill mt-5" href="#Assembly and reflcetion on the guidances (cont.)">Assembly and reflcetion on the guidances (cont.)</a>
+                        <a class="btn btn-primary btn-xl rounded-pill mt-5" href="#Prints and iterations">Prints and iterations</a>
+                        <a class="btn btn-primary btn-xl rounded-pill mt-5" href="#Prints and iterations cont.">Prints and iterations cont.</a>
+                        <a class="btn btn-primary btn-xl rounded-pill mt-5" href="#Final product">Final product</a> 
+                        <a class="btn btn-primary btn-xl rounded-pill mt-5" href="#Troubleshooting">Troubleshooting</a>
+                        <a class="btn btn-primary btn-xl rounded-pill mt-5" href="#Innovative ideas">Innovative ideas</a>
+                    </div>
+                </div>
+            </div>
+        </section>       
+        <!-- Content section-->
+        <section class="py-5" id="Slice & print">
+            <div class="container px-5">
+                <div class="row gx-5 align-items-center">
+                    <div class="col-lg-6">
+                        <div class="p-5"><img class="img-fluid rounded-circle" src="Pics/print1.png" ></div>
+                        <div class="p-5"><img class="img-fluid rounded-circle" src="Pics/Mise en place4.jpg" ></div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="p-5">
+                            <h2 class="display-4">Slice & print</h2>
+                            <p> I first registered as a member of e-NABLE and download the presets of Unlimited Phoenix left hand version 3. I didn't use Raise E2, instead I used Prusa MINI, whose bed is relatively small, considering we were slicing 150% scaled components. Therefore, the whole set of components need to be allocated to two prints. I did one print and my partner did one. In the last project, one failure print was presumably caused by excessive supported. So this time I chose 'supprt on build plate only' instead of 'support everywhere'. And it came out pretty good.<br> <br>On the day I was printing, almost all the printers experienced filament breakage due to increased indoor moisture. I had to figure out how to reload the PLA filament. Firstly, you should identify where the filament has broken. If it breaks between the filament sensor and the extruder, try to purge the broken part if possible and then unload the remaining broken filament. If the break occurs between the filament sensor and the filament spool, unload or purge the filament beyond the break and let the gear catch it once reloading begins</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="Assembly and reflcetion on the guidances">
+            <div class="container px-5">
+                <div class="row gx-5 align-items-center">
+                    <div class="col-lg-6 order-lg-2"> 
+                        <div class="p-5"><img class="img-fluid rounded-circle" src="Pics/Fingers2.jpg" ></div>
+                        <div class="p-5"><img class="img-fluid rounded-circle" src="Pics/Bracer.png" ></div>
+                    </div>
+                    <div class="col-lg-6 order-lg-1">
+                        <div class="p-5">
+                            <h2 class="display-4">Assembly and reflcetion on the guidances</h2>
+                            <p> The entire assembly process is straightforward. However, many small mistakes can potentially occur if you're not paying close attention. One such mistake we made was not distinguishing the lengths of the plastic bolts. Initially, we followed the assembly manual, which provided better illustrations for differentiating similar components. However, we later switched to an online video tutorial because we found the video instructions more intuitive and efficient. The drawback of video guidance, though, is its poor ability to differentiate similar components. As a result, we stablized the ring and pinky fingers with a thicker, shorter and the two fingers were stuck at the joints. It really took us some effort to take the bolt out of the notches of the palm and fingers. If I'm the documentor of such a video instruction, I would insert a screenshot of the assembly manual to show the differences between the very similar componenets. Vincent helped us to mold the shape of the bracer by heat gun. It just took seconds to form the shape. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <ssection class="py-5" id="Assembly and reflcetion on the guidances (cont.)">
+            <div class="container px-5">
+                <div class="row gx-5 align-items-center">
+                    <div class="col-lg-6 order-lg-1">
+                        <div class="p-5"><img class="img-fluid rounded-circle" src="Pics/Strings.jpg" ></div>
+                        <div class="p-5"><img class="img-fluid rounded-circle" src="Pics/video.png" ></div>
+                    </div>
+                    <div class="col-lg-6 order-lg-2">
+                        <div class="p-5">
+                            <h2 class="display-4">Assembly and reflcetion on the guidances (cont.)</h2>
+                            <p>I took the hand with me and completed the stringing at home. Stringing is arguably the most challenging part of the assembly. The reason it's challenging is because it's difficult to ensure that the strings have the same tension meanwhile keep the equilibrium angle as 30 degree upward, which is crucial for the fingers to function properly. The assembly manual didn't offer detailed guidance for the stringing process, while the video instruction did. However, neither of them taught me how to tie the string properly to maintain consistent tension. The video I found skipped the tying step entirely, which was quite frustrating. I had to search for additional resources on how to tie the string around a rod while the tension remained stable.</p>
+                        </div> 
+                </div>
+            </div>
+        </section>
+        <section id="Final Product">
+            <div class="container px-5">
+                <div class="row gx-5 align-items-center">
+                    <div class="col-lg-6 order-lg-2"> 
+                        <div class="p-5"> <img class="img-fluid rounded-circle" src="Pics/Finalproduct.png"></div>
+                    </div>
+                    <div class="col-lg-6 order-lg-1">
+                        <div class="p-5">
+                            <h2 class="display-4">Final Product</h2>
+                            <p>After installing the buckles and the gel grip finger tips, the hand is ready for test functionality. The following button will bring you to my demonstration video, in which I tried to use the assembled Unlimited Phoenix left hand to grab a bottle of water.</p>
+                            <div class="text-center mt-4">
+                                <a class="btn btn-xl btn-outline-dark" href="DemonstrationVideo.mp4">
+                                    <i class="fas fa-download me-2"></i>
+                                    Demonstration Video
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="Troubleshooting">
+            <div class="container px-5">
+                <div class="row gx-5 align-items-center">
+                    <div class="col-lg-6 order-lg-1"> 
+                        <div class="p-5"><img class="img-fluid rounded-circle" src="Pics/Pins.png" ></div>
+                        <div class="p-5"><img class="img-fluid rounded-circle" src="Pics/fp.png" ></div>
+                    </div>
+                    <div class="col-lg-6 order-lg-2">
+                        <div class="p-5">
+                            <h2 class="display-4">Troubleshooting</h2>
+                            <p>An additional problem I've encountered is that my tension pins do not fit well the m4 screws. It's a little bigger than the m4 screws given in the accessories package. I also tried the m5 screws provided by Prof. Ian. Unfortuanately, m5 ones are a bit greater for my tension pins. But Prof. Ian also has some backups prints and luckily enough there are exactly three backup pins working with m4 screws so I used them as the  substitutes. The red of the substitutes make the hand even more colorful :D <br> <br>Another problem I faced was my trouble in converting an imported mesh into a solid, editable body. Prof. Ian provided some instructions, and I was able to figure it out. The issue was related to the excessive number of meshed triangles when I imported the STL file. The computation load was too heavy for the computer, so I had to first reduce the number of meshed elements and then convert it into a solid body.  </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="Innovative ideas">
+            <div class="container px-5">
+                <div class="row gx-5 align-items-center">
+                    <div class="col-lg-6 order-lg-2"> 
+                        <div class="p-5"><img class="img-fluid rounded-circle" src="Pics/Innovative ideas.png"></div>
+                    </div>
+                    <div class="col-lg-6 order-lg-1">
+                        <div class="p-5">
+                            <h2 class="display-4">Innovative ideas</h2>
+                            <p>This Unlimited Phoenix hand has limited ways of motion. Grabbing, gripping, and holding are the maximum accuracy it can do. It might not able to properly use fine utensils such as fork. Therefore, I'm thinking to have two ring on the back of the palm so that you can bind more utensils with Unlimited phoenix hands. Adding hard nails to the gel grip finer tips is also an interesting innvovative idea.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Footer-->
+        <footer class="py-5 bg-dark">
+            <div class="container"><p class="m-0 text-center text-white">Copyright &copy; Mark Zhang 2023</p></div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
