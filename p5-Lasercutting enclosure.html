@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Mark's Personal Webpage</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body>
+        <!-- Responsive navbar-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">Mark Zhang</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link" aria-current="page" href="index.html">Home</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-user fa-fw"></i>ENGR Doc</a>
+                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="ENGR Doc.html">p1-3D printer Assembly&Benchy</a></li>
+                                <li><a class="dropdown-item" href="p2-Card holder.html">p2-Card holder</a></li>
+                                <li><a class="dropdown-item" href="p3-AlarmClock.html">p3-Alarm Clock</a></li>
+                                <li><a class="dropdown-item" href="p4-eNABLE hand.html">p4-eNABLE Hand</a></li>
+                                <li><a class="dropdown-item" href="p5-Lasercutting enclosure.html">p5-Lasercutting enclosure</a></li>
+                            </ul>
+                        <li class="nav-item"><a class="nav-link" href="./portfolio/portfolio.html">Calligraphy Portfolio</a></li>                        
+                        <li class="nav-item"><a class="nav-link" href="Reading Blog.html">Reading Blog</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Header - set the background image for the header in the line below-->
+        <header class="py-5 bg-image-full" style="background-image: url('./css/Engineering.jpg')" >
+            <div class="text-center my-5">
+                <h1 class="text-black fs-3 fw-bolder" style="font-weight: 250; font-size: 250%;">Mark Zhang</h1>
+                <p class="text-black mb-0" style="font-weight: 700; font-size: 300%">Engineering Documentation</p>
+            </div>
+        </header>
+        <!-- Content section-->
+        <section class="py-5">
+            <div class="container my-5">
+                <div class="row justify-content-center">
+                    <div class="col-lg-6">
+                        <h2 style="font-size: 250%;">Card Holder</h2>
+                         <p class="lead" style="font-size: 100%;">October 5th, Thursday, 2023 </p>
+                        <p class="lead" style="font-size: 100%;">This week, I further delved into the Fusion360 and learned the basics of lasercutting with Prof. Ian and Prof. Rogers. </p>
+                        <p class="lead" style="font-size: 150%;">Interactive index</p>
+                        <a class="btn btn-primary btn-xl rounded-pill mt-5" href="#Fusion360 Box">Fusion360 Box</a>
+                        <a class="btn btn-primary btn-xl rounded-pill mt-5" href="#Cover & Features">Cover & Features</a>                       
+                        <a class="btn btn-primary btn-xl rounded-pill mt-5" href="#Lasercutting Preparation">Lasercutting Preparation</a>
+                        <a class="btn btn-primary btn-xl rounded-pill mt-5" href="#LightBurn Settings">LightBurn Settings</a>
+                        <a class="btn btn-primary btn-xl rounded-pill mt-5" href="#Laser Cutting Running">Laser Cutting Running</a>
+                        <a class="btn btn-primary btn-xl rounded-pill mt-5" href="#First Cut">First Cut</a>
+                        <a class="btn btn-primary btn-xl rounded-pill mt-5" href="#Second cut">Second cut</a>
+                        <a class="btn btn-primary btn-xl rounded-pill mt-5" href="#Troubleshooting & reflection">Troubleshooting & reflection</a>
+                    </div>
+                </div>
+            </div>
+        </section>       
+        <!-- Content section-->
+        <section class="py-5" id="Fusion360 Box">
+            <div class="container px-5">
+                <div class="row gx-5 align-items-center">
+                    <div class="col-lg-6">
+                        <div class="p-5"><img class="img-fluid rounded-circle" src="Pics/fusionbox.png" ></div>
+                        <div class="p-5"><img class="img-fluid rounded-circle" src="Pics/constructionplane.png" ></div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="p-5">
+                            <h2 class="display-4">Fusion360 Box </h2>
+                            <p> I initially designed a CAD box in Fusion 360 with five facets, an open top, and then added a cover on top. The joints between each pair of sides are finger joints, which are suitable for Lightburn laser cutting. During the design process, I became familiar with several powerful tools in Fusion 360. I defined the width, length, and height as variable parameters, which I then implemented in the sketches. Consequently, once I have the necessary measurements, I can easily update the parameters to fit the circuit board. Another valuable tool is the mirror tool. With its assistance, I only needed to sketch one side for both facets in opposite directions. One important thing to mention is that when I wanted to mirror the bottom for the top cover, I needed to create a construction plane which hovers at the middle of the box first. This is because, unlike the sides, which can use the xz plane and yz plane of the origin as their mirrors, there's no good reference for the bottom-top pair since the origin is on the same level as the bottom. If a mirror image is created around the origin's xy plane, it would be the bottom itself. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="Cover & Features">
+            <div class="container px-5">
+                <div class="row gx-5 align-items-center">
+                    <div class="col-lg-6 order-lg-2"> 
+                        <div class="p-5"><img class="img-fluid rounded-circle" src="Pics/cover.png" ></div>
+                    </div>
+                    <div class="col-lg-6 order-lg-1">
+                        <div class="p-5">
+                            <h2 class="display-4">Cover & Features</h2>
+                            <p>I borrowed the cover design from my project 3. One little challenge is to have the cover fitting into the existed sides and their finger joints. Here I had some hands-on practice of the 'Solid-Combine' tool. There are some interesting functions inside the combine tool and if I want to keep the selected bodies as individual components, I should check 'cut' and 'keep tools'. Besides, one problem I encountered was when I tried to extrude (negatively) a hole for battery wire on the left side, the right side copied my operations and also cut an unnecessary hole. This is the sort of issue which you know how it blatantly errored, that is, my right side is the mirror side of my left side, but it takes time to fix it. I eventually figured out: it's because I drew the rectangle for extrusion directly on the left side body, which is mirror reference. I should have created a sketch outside of the body. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <ssection class="py-5" id="Lasercutting Preparation">
+            <div class="container px-5">
+                <div class="row gx-5 align-items-center">
+                    <div class="col-lg-6 order-lg-1">
+                        <div class="p-5"><img class="img-fluid rounded-circle" src="Pics/flatver.png" ></div>
+                    </div>
+                    <div class="col-lg-6 order-lg-2">
+                        <div class="p-5">
+                            <h2 class="display-4">Lasercutting Preparation </h2>
+                            <p>Laying components flat is a crucial step in preparing for laser cutting because our ultimate goal is to export them as DXF files. During this process, I explored the 'Joint' feature under the 'Assemble' tab. 'Joint' essentially allows you to align a selected component or body with a point or a line. This feature proves powerful when disassembling my box and laying the components flat on the same plane. I had tried several methods to export a Fusion 360 design as a DXF file, but unfortunately, none of them worked out. However, Professor Rogers came up with an elegant solution. What Professor Rogers suggested to me was to create a projected sketch on the face of each component. These vector-based sketches can then be exported as DXF files.
+                            </p>
+                        </div> 
+                </div>
+            </div>
+        </section>
+        <section id="LightBurn Settings">
+            <div class="container px-5">
+                <div class="row gx-5 align-items-center">
+                    <div class="col-lg-6 order-lg-2"> 
+                        <div class="p-5"><img class="img-fluid rounded-circle" src="Pics/mess.png" ></div>
+                        <div class="p-5"><img class="img-fluid rounded-circle" src="Pics/Lasersetting.png" ></div>
+                    </div>
+                    <div class="col-lg-6 order-lg-1">
+                        <div class="p-5">
+                            <h2 class="display-4">LightBurn Settings</h2>
+                            <p>Well, frankly speaking, even though this is my first time using LightBurn, I have to say I hate the fact that LightBurn lacks the functionality of automatically arrange and fit vector shapes into material size. So once you collectively import all your DXF files, you would get a complete mess of overlapped vectors. I did some searching online and people were saying the same that there's no such arrange tool, which is quite disappointing. For this project, I only had 6 DXF files to import. But imagine what if it was a greater project with hundreds of components and I had to manually import them one by one...Bruh. 
+
+                            The preset for MDF board, the material I used, was speed 20% amd power 100%. Prof. Ian reminded me some safety precautions; ventilation, alarm, and emergency stop button and guided me through the material optimization. After connecting with our Laser machines Mira 7 and Mira 9, I was good to go. </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="Laser Cutting Running">
+            <div class="container px-5">
+                <div class="row gx-5 align-items-center">
+                    <div class="col-lg-6 order-lg-1"> 
+                        <div class="p-5"><img class="img-fluid rounded-circle" src="Pics/demonstration.png" ></div>
+                    </div>
+                    <div class="col-lg-6 order-lg-2">
+                        <div class="p-5">
+                            <h2 class="display-4">Laser Cutting Running</h2>
+                            <p>Here's how the laser works</p>
+                            <div class="text-center mt-4">
+                                <a class="btn btn-xl btn-outline-dark" href="Pics/demonstrationlaser.mp4">
+                                    <i class="fas fa-download me-2"></i>
+                                    Demonstration Video
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="First Cut">
+            <div class="container px-5">
+                <div class="row gx-5 align-items-center">
+                    <div class="col-lg-6 order-lg-2"> 
+                        <div class="p-5"><img class="img-fluid rounded-circle" src="Pics/firstcut.png"></div>
+                        <div class="p-5"><img class="img-fluid rounded-circle" src="Pics/firstcut2.png"></div>
+                    </div>
+                    <div class="col-lg-6 order-lg-1">
+                        <div class="p-5">
+                            <h2 class="display-4">First Cut</h2>
+                            <p>My first attempt is not perfect. The finger joints are too loose to hold each other stably. The tolerance in my CAD model is inadequate because each joint is created solely by the complementary cut of the others. However, I should have considered that the cutting process would involve a loss of material, resulting in joints smaller than expected. I measured the gap between the concave joint and the bulge joint to be approximately 0.4 millimeters. Other than that, the major dimensions fit the circuit board.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="Second cut">
+            <div class="container px-5">
+                <div class="row gx-5 align-items-center">
+                    <div class="col-lg-6 order-lg-1"> 
+                        <div class="p-5"><img class="img-fluid rounded-circle" src="Pics/secondcut.png" ></div>
+                        <div class="p-5"><img class="img-fluid rounded-circle" src="Pics/substitutes.png" ></div>
+                    </div>
+                    <div class="col-lg-6 order-lg-2">
+                        <div class="p-5">
+                            <h2 class="display-4">Second cut</h2>
+                            <p>Based on the gap, I extruded 0.2 millimeters on each side of the concave joint to compensate for the material loss during cutting. The second cut turned out to be a bit tight, and I accidentally broke the top bridging on the left side. However, it's not a significant issue. Recognizing that this side is particularly vulnerable, I created four additional substitutes. In the end, the overall quality of the second cut is great, with the joints tightly fitting together.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="Troubleshooting & reflection">
+            <div class="container px-5">
+                <div class="row gx-5 align-items-center">
+                    <div class="col-lg-6 order-lg-2"> 
+                        <div class="p-5"><img class="img-fluid rounded-circle" src="Pics/contrast.png"></div>
+                    </div>
+                    <div class="col-lg-6 order-lg-1">
+                        <div class="p-5">
+                            <h2 class="display-4">Troubleshooting & reflection</h2>
+                            <p>I've encountered relatively little issues in this project compared to the previous clock project. It's most likely because i alrady have the best-fit measurements for the cover so i don't have to experience the annoying iteration, although most of the time iteration is the most important step for engineering a product of good quality. Besides, I feel Laser cutting can achieve high precision and fine details, making it ideal for intricate vector-based designs. I'm glad that now I'm more proficient with Fusion360. The project and inspect tools are really useful for separating components, preparing for the lasercutting. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Footer-->
+        <footer class="py-5 bg-dark">
+            <div class="container"><p class="m-0 text-center text-white">Copyright &copy; Mark Zhang 2023</p></div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
